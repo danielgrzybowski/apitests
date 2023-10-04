@@ -9,8 +9,8 @@ describe("User creation", function() {
         incorrect_repeat = helpers.createUserModel(),
         invalid_password = helpers.createUserModel();
 
-    incorrect_repeat.repeatPassword = "Automation?";
-    invalid_password.password = "automation!";
+    incorrect_repeat.repeatPassword = "";
+    invalid_password.password = "";
 
     [
         {name:"valid data",                    
